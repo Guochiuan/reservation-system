@@ -1,6 +1,6 @@
 Poms:
 reservation-system  
-  
+---------------------------------------------------------------------------------  
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -36,8 +36,10 @@ reservation-system
         </pluginManagement>
     </build>
 </project>
-flightmodule
+-------------------------------------------------------------------------------------------------
 
+flightmodule
+--------------------------------------------------------------------------------------------------
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -55,8 +57,9 @@ flightmodule
     <packaging>jar</packaging>
     <name>flightmodule</name>
 </project>
+----------------------------------------------------------------------------------------------------------
 hotelmodule
-
+-----------------------------------------------------------------------------------------------------------
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -74,8 +77,9 @@ hotelmodule
     <packaging>jar</packaging>
     <name>hotelmodule</name>
 </project>
+---------------------------------------------------------------------------------------------------------------
 packagemodule
-
+-----------------------------------------------------------------------------------------------------------------
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -129,23 +133,29 @@ packagemodule
     </build>
 
 </project>
+
+----------------------------------------------------------------------------------------------------
 Module Descriptors
 flightmodule
-
+----------------------------------------------------------------------------------------------------
 module com.udacity.flight {
     exports com.udacity.flight.search;
     exports com.udacity.flight.model;
 }
-hotelmodule
 
+-----------------------------------------------------------------------------------------------------
+hotelmodule
+----------------------------------------------------------------------------------------------------
 module com.udacity.hotel {
     exports com.udacity.hotel.search;
     exports com.udacity.hotel.model;
     opens com.udacity.hotel.model;
 }
+------------------------------------------------------------------------------------------------------
 packagemodule
-
+------------------------------------------------------------------------------------------------------
 module com.udacity.packagesearch {
     requires com.udacity.flight;
     requires com.udacity.hotel;
 }
+--------------------------------------------------------------------------------------------------------
