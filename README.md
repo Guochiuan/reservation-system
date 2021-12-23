@@ -1,4 +1,6 @@
 # Migrating to Java 9 modules
+# UNTESTED
+
 
 The folder `reservation-system` contains a Maven project consisting of just one module.
 (it's similar to the one on first exercise). You'll separate this app in three different modules.
